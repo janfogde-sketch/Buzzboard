@@ -1,0 +1,23 @@
+{
+  "Common": { "appName": "Buzzboard", "language": "Language", "signOut": "Sign out" },
+  "Home": {
+    "title": "Quiz night with the buzzer on your phone",
+    "lead": "Create a Jeopardy game in minutes. Teams scan a QR code and buzz in from their phones while the game runs on the big screen. Just a browser, nothing to install.",
+    "cta": "Create a game",
+    "dashboard": "My games"
+  },
+  "Login": {
+    "title": "Sign in",
+    "lead": "Enter your email and we will send you a link to sign in.",
+    "email": "Email",
+    "send": "Send sign-in link",
+    "sent": "Check your inbox. The link was sent to {email}.",
+    "error": "We could not send the link. Check the email address and try again.",
+    "callbackError": "The link did not work or has expired. Ask for a new one."
+  },
+  "Dashboard": {
+    "title": "My games",
+    "welcome": "You are signed in as {email}.",
+    "empty": "You have no games yet. The game builder comes in the next step."
+  }
+}
