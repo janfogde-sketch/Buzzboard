@@ -1,0 +1,23 @@
+{
+  "Common": { "appName": "Buzzboard", "language": "Sprog", "signOut": "Log ud" },
+  "Home": {
+    "title": "Quizaften med buzzer på telefonen",
+    "lead": "Opret et Jeopardy-spil på få minutter. Holdene scanner en QR-kode og buzzer fra telefonen, mens spillet kører på storskærmen. Kun en browser, ingen installation.",
+    "cta": "Opret spil",
+    "dashboard": "Mine spil"
+  },
+  "Login": {
+    "title": "Log ind",
+    "lead": "Skriv din e-mail, så sender vi et link, du kan logge ind med.",
+    "email": "E-mail",
+    "send": "Send login-link",
+    "sent": "Tjek din indbakke. Linket er sendt til {email}.",
+    "error": "Det lykkedes ikke at sende linket. Tjek e-mailadressen og prøv igen.",
+    "callbackError": "Linket virkede ikke eller er udløbet. Bed om et nyt."
+  },
+  "Dashboard": {
+    "title": "Mine spil",
+    "welcome": "Du er logget ind som {email}.",
+    "empty": "Du har ingen spil endnu. Spilbyggeren kommer i næste trin."
+  }
+}

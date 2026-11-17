@@ -1,0 +1,49 @@
+/* Neutralt, elegant mørkt tema. Logo og farver pr. vært kommer senere som overstyring af disse variabler. */
+:root {
+  --bg: #0e1118;
+  --panel: #161a24;
+  --line: #262c3a;
+  --fg: #e9ecf5;
+  --muted: #9aa3b5;
+  --accent: #e0b34a;
+  --accent-fg: #14171f;
+  --danger: #e5705f;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.55 var(--font-body);
+}
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; text-wrap: balance; margin: 0; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.shell { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
+.topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-bottom: 24px; flex-wrap: wrap; }
+.brand { font: 700 20px var(--font-display); color: var(--fg); text-decoration: none; }
+.lang { display: flex; gap: 8px; font-size: 14px; }
+.hero { padding-block: 48px; display: grid; gap: 16px; max-width: 640px; }
+.hero h1 { font-size: clamp(30px, 6vw, 46px); }
+.lead { color: var(--muted); font-size: 18px; margin: 0; }
+
+.btn {
+  display: inline-block; border: 0; border-radius: 8px; padding: 12px 20px; cursor: pointer;
+  font: 600 16px var(--font-body); background: var(--accent); color: var(--accent-fg); text-decoration: none;
+}
+.btn.ghost { background: transparent; color: var(--fg); border: 1px solid var(--line); }
+
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 20px; display: grid; gap: 12px; max-width: 440px; }
+label { display: grid; gap: 6px; font-size: 14px; color: var(--muted); }
+input[type="email"] {
+  background: var(--bg); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; padding: 12px; font: 16px var(--font-body);
+}
+.notice { margin: 0; font-size: 14px; }
+.notice.error { color: var(--danger); }
+
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
